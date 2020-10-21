@@ -48,7 +48,7 @@ function getUserInfo() {
 // 渲染用户头像
 function renderAvatar(user) {
     // 1. 获取用户名称
-    var name = user.username || user.nickname
+    var name = user.nickname || user.username
     // 2.更改欢迎文本
     $('#welcome').html('欢迎&nbsp&nbsp' + name)
     // 3.按需显示用户头像
